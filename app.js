@@ -5,8 +5,8 @@ const publicPath = path.resolve(__dirname, "./public");
 
 app.use(express.static(publicPath))
 
-//app.set('puerto',process.env.PORT || 3000) //agregado para el deploy
-//app.listen(app.get('puerto'), ()=>console.log(`Servidor escuchando en puerto ${app.get('puerto')}`)); 
+app.set('puerto',process.env.PORT || 3000) //agregado para el deploy
+app.listen(app.get('puerto'), ()=>console.log(`Servidor escuchando en puerto ${app.get('puerto')}`)); 
 //agregado para el deploy
 
 
